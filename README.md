@@ -1,6 +1,5 @@
 # Instagram Clone
-
-![project](/home/yigit/Masaüstü/project.gif)
+![](project.gif)
 
 ## Summary
 
