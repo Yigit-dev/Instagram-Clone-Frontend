@@ -1,0 +1,44 @@
+@import 'config/Variable';
+@import '../font/font';
+@import 'config/General';
+@import 'config/Svg';
+
+.app-inner{
+
+
+  // for Navigation
+  height: calc(100vh - 60px);
+  overflow: auto;
+  
+  .homePage{
+    @import 'components/Homepage/Header';
+  
+    @import 'components/Homepage/Stories';
+    
+    @import 'components/Homepage/Post';
+  }
+
+  .profilePage{
+    overflow-x: hidden;
+    @import 'components/Profile/Header';
+
+    @import 'components/Profile/Bio';
+
+    @import 'components/Profile/ProfileNavigation';
+    
+    @import 'components/Profile/Content';
+
+  }
+
+  .activityPage{
+    @import 'components/Activity/Header';
+    
+    @import 'components/Activity/FollowRequest';
+
+    @import 'components/Activity/Activity';
+  }
+
+}
+
+@import 'global/Navigation';
+@import 'global/PostStatus';

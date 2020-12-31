@@ -1,0 +1,13 @@
+.Header{
+  background: #fff;
+  border: $buttonBorder;
+  box-shadow: $boxShadow;
+  h4{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

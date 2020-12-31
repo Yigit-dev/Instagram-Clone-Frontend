@@ -1,0 +1,228 @@
+//SVG
+.Header{
+  svg{
+    &.camera{
+      width: 23px; 
+      height: 20px;
+      fill: none;
+      path{
+        fill: black;
+      }
+    }
+    &.logo{
+      width: 96px;
+      height: 28px;
+      fill: none;
+      path{
+        fill: #262626;
+      }
+    }
+    &.dm{
+      width:23px;
+      height:20px;
+      fill: none;
+      path{
+        fill:black;
+      }
+    }
+    &.settings{
+      width: 20px;
+      height: 20px;
+    }
+    &.user-add{
+      width: 20px;
+      height: 20px;
+      fill:#000;
+    }
+  }
+}
+
+.Navigation{
+  svg{
+    &.home{
+      width: 21px;
+      height: 23px;      
+      fill: none;
+      path{
+        stroke: black;
+        stroke-width: 1.2;
+      }      
+    }
+    &.search{
+      width: 23px;
+      height: 22px;
+      fill: none;
+
+      path{
+        fill: black;
+        stroke: black;
+        stroke-width: 0.2;
+      }
+    }
+    &.camera{
+      width: 22px;
+      height: 23px;
+      fill: none;
+
+      path{
+        fill: black;
+      }
+    }
+    &.activity{
+      width: 23px;
+      height: 23px;
+      fill: none;
+      path{
+        stroke: black;
+      }
+    }
+  }
+
+  li{
+    &.active{
+      svg{
+        &.home{
+          fill: #000;
+        }
+        &.search{
+          path{
+            stroke-width: 1.1
+          }
+        }
+        &.camera{
+          path{
+            fill: #000;
+            stroke-width: 1.1px;            
+          }
+        }
+        &.activity{
+          fill: #000;
+          path{
+            stroke: $stroke;
+          }
+        }        
+      }
+      .profile{
+        img{
+          width: 27px!important;
+          height: 27px!important;
+        }
+      }
+    }
+  }
+}
+
+.Stories{
+  svg{
+    &.watchAll{
+      width: 7px;
+      height: 10px;
+      fill: none;
+      path{
+        fill: #4F4F4F;
+      }
+    }
+  }
+}
+
+.Post{
+  svg{
+    &.threeDots{
+      width: 13px;
+      height: 3px;
+      fill: none;
+      path{
+        fill: #4F4F4F;
+      }
+    }
+    &.like{
+      width: 21px;
+      height: 19px;
+      fill: none;
+      path{
+        stroke: black; 
+        stroke-linecap: round;
+      }
+    }
+    &.comment{
+      width: 21px; 
+      height: 21px;
+      fill: none;
+      mask{
+        fill: white;
+      }
+      path{
+        fill: black;
+      }
+    }
+    &.directMessage{
+      width: 23px; 
+      height: 20px;
+      fill: none;
+      path{
+        fill: black;
+      }
+    }
+    &.saved{
+      width: 16px;
+      height: 21px;
+      fill: none;
+      path{
+        stroke: black;
+      }
+    }
+    
+  }
+}
+
+.ProfileNavigation{
+  svg{
+    &.grid{
+      width: 26px;
+      height: 26px;
+      fill: none;
+      rect{
+        stroke: black;
+        stroke-width: 1.5;
+      }
+    }
+    &.saved{
+      width: 26px;
+      height: 26px;
+      path{
+        stroke: black;
+      }
+    }
+    &.tag{
+      width: 26px;
+      height: 26px;
+      fill: none;
+      path,circle{
+        stroke: black;
+        stroke-width: 1.5;
+      }
+    }
+  }
+}
+
+.activityPage{
+  .FollowRequest{
+    &-Icon{
+      svg{
+        &.rightArrow{
+          width: 10px;
+          height: 18px;
+          g{
+            stroke: none;
+            stroke-width: 1; 
+            fill: none;
+            polyline{
+              stroke: rgba(black, 0.7);
+              stroke-width: 1.875;
+            }
+          }
+        }
+      }
+    }
+  }
+}

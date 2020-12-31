@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+
+    <div class="app-inner">
+        
+        <div class="homePage active" id="Home" data-tab-content>
+            <div class="Header">
+    <svg class="camera" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3.5C7 2.11929 8.11929 1 9.5 1H13.5C14.8807 1 16 2.11929 16 3.5V4H16.5H20.5C21.3284 4 22 4.67157 22 5.5V17.5C22 18.3284 21.3284 19 20.5 19H2.5C1.67157 19 1 18.3284 1 17.5V5.5C1 4.67157 1.67157 4 2.5 4H6.5H7V3.5ZM9.5 0C7.73676 0 6.27806 1.30385 6.03544 3H2.5C1.11929 3 0 4.11929 0 5.5V17.5C0 18.8807 1.11929 20 2.5 20H20.5C21.8807 20 23 18.8807 23 17.5V5.5C23 4.11929 21.8807 3 20.5 3H16.9646C16.7219 1.30385 15.2632 0 13.5 0H9.5ZM7 10.5C7 8.01472 9.01472 6 11.5 6C13.9853 6 16 8.01472 16 10.5C16 12.9853 13.9853 15 11.5 15C9.01472 15 7 12.9853 7 10.5ZM11.5 5C8.46243 5 6 7.46243 6 10.5C6 13.5376 8.46243 16 11.5 16C14.5376 16 17 13.5376 17 10.5C17 7.46243 14.5376 5 11.5 5Z"/>
+    </svg>
+
+    <svg class="logo" viewBox="0 0 96 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.70955 0.846162C3.77975 1.65395 1.65826 3.93604 0.988223 6.80057C0.139675 10.43 3.67088 11.9648 3.96051 11.4616C4.3014 10.8703 3.32776 10.6703 3.12734 8.78717C2.86832 6.35495 3.99906 3.63721 5.42213 2.44475C5.68665 2.2232 5.67407 2.53156 5.67407 3.10192C5.67407 4.12188 5.61771 13.2781 5.61771 15.189C5.61771 17.7747 5.51091 18.5912 5.3191 19.398C5.12476 20.2156 4.81232 20.7681 5.04907 20.9809C5.31358 21.2189 6.44295 20.6527 7.09676 19.7402C7.88077 18.6458 8.15521 17.3315 8.20449 15.9041C8.264 14.1835 8.26146 11.4532 8.264 9.8959C8.26638 8.4676 8.28806 4.28523 8.23896 1.77095C8.22693 1.15425 6.51659 0.507233 5.70945 0.845412L5.70955 0.846162ZM74.2365 12.947C74.1743 14.2912 73.8767 15.3419 73.5074 16.0831C72.7925 17.5178 71.309 17.9633 70.6791 15.9008C70.3358 14.7765 70.3198 12.8989 70.5666 11.33C70.8178 9.73169 71.5193 8.52463 72.6808 8.63348C73.8264 8.74109 74.3627 10.2174 74.2365 12.947ZM54.9228 21.287C54.9072 23.5205 54.5557 25.4789 53.8019 26.0477C52.7327 26.8542 51.2957 26.2492 51.5933 24.6194C51.8565 23.1771 53.1017 21.7042 54.9258 19.9046C54.9258 19.9046 54.9296 20.315 54.9228 21.287ZM54.6308 12.934C54.5654 14.1583 54.248 15.3883 53.9017 16.0832C53.1869 17.518 51.6926 17.9665 51.0733 15.901C50.6499 14.4897 50.7513 12.6632 50.9608 11.5123C51.2327 10.0191 51.8916 8.63381 53.075 8.63381C54.2256 8.63381 54.793 9.89601 54.6308 12.934ZM43.4423 12.9153C43.3721 14.212 43.1192 15.2959 42.7132 16.0832C41.9788 17.5081 40.5257 17.96 39.8849 15.901C39.4229 14.4163 39.5802 12.3918 39.7723 11.2982C40.0575 9.67535 40.7717 8.52478 41.8865 8.63381C43.0317 8.74569 43.5884 10.2174 43.4423 12.9153ZM94.7165 14.4299C94.4366 14.4299 94.3088 14.7184 94.2032 15.2042C93.8366 16.893 93.4512 17.2744 92.9543 17.2744C92.3992 17.2744 91.9004 16.4381 91.7722 14.7641C91.6714 13.4477 91.6876 11.0243 91.8165 8.61366C91.8428 8.11837 91.7062 7.6283 90.3777 7.1457C89.8061 6.93811 88.9751 6.63246 88.5614 7.63116C87.3924 10.4527 86.935 12.6927 86.8274 13.6027C86.8218 13.6498 86.7641 13.6594 86.7539 13.5494C86.6854 12.8206 86.5321 11.4961 86.513 8.7135C86.5094 8.17058 86.3943 7.70845 85.7951 7.3301C85.4063 7.0846 84.2255 6.6504 83.8004 7.16696C83.432 7.58942 83.0055 8.72634 82.5622 10.074C82.202 11.1694 81.9511 11.9103 81.9511 11.9103C81.9511 11.9103 81.9558 8.95488 81.9601 7.83382C81.962 7.41089 81.6719 7.26996 81.5845 7.24441C81.1907 7.13014 80.415 6.93923 80.0857 6.93923C79.6794 6.93923 79.5799 7.16633 79.5799 7.49722C79.5799 7.54054 79.5158 11.3884 79.5158 14.079C79.5158 14.1958 79.5158 14.3233 79.517 14.4588C79.2923 15.6954 78.5635 17.3741 77.771 17.3741C76.9775 17.3741 76.6031 16.6723 76.6031 13.4647C76.6031 11.5935 76.6593 10.7798 76.6869 9.42644C76.7029 8.6469 76.7339 8.04828 76.7321 7.91244C76.7263 7.49585 76.006 7.28589 75.6708 7.20829C75.334 7.13004 75.0414 7.09973 74.8128 7.11275C74.4894 7.131 74.2606 7.34319 74.2606 7.63503C74.2606 7.79151 74.2623 8.08907 74.2623 8.08907C73.8458 7.43444 73.1757 6.9788 72.7299 6.84677C71.5292 6.49017 70.2763 6.80614 69.3312 8.12859C68.5801 9.17934 68.1273 10.3694 67.9491 12.0793C67.8188 13.3293 67.8614 14.5969 68.0929 15.6689C67.8131 16.8785 67.2937 17.3741 66.7249 17.3741C65.8992 17.3741 65.3006 16.0263 65.3701 13.6954C65.416 12.1623 65.7227 11.0864 66.0581 9.5299C66.2011 8.86638 66.0849 8.51898 65.7935 8.18603C65.5263 7.8807 64.9569 7.7247 64.1383 7.91657C63.5552 8.05336 62.7216 8.20047 61.9589 8.31347C61.9589 8.31347 62.0049 8.12985 62.0426 7.80611C62.241 6.10834 60.3961 6.24609 59.8075 6.78836C59.4562 7.11211 59.217 7.49395 59.1262 8.18048C58.9823 9.26996 59.8708 9.78383 59.8708 9.78383C59.5793 11.1183 58.8647 12.8616 58.1269 14.122C57.7317 14.7973 57.4294 15.2977 57.0392 15.8296C57.0377 15.6316 57.0367 15.4335 57.0359 15.2364C57.027 12.4307 57.0644 10.2226 57.0809 9.4267C57.0969 8.64717 57.1281 8.06442 57.1264 7.92858C57.122 7.62388 56.9441 7.50882 56.574 7.36313C56.2467 7.23427 55.8598 7.14508 55.4585 7.11397C54.9519 7.07446 54.6467 7.34314 54.6546 7.66085C54.6562 7.72084 54.6562 8.08919 54.6562 8.08919C54.2396 7.43454 53.5696 6.97892 53.1238 6.84688C51.9231 6.49044 50.6701 6.80641 49.7251 8.1287C48.9741 9.17945 48.4823 10.6539 48.343 12.0664C48.2131 13.3827 48.2371 14.5014 48.4141 15.4438C48.2231 16.3874 47.6742 17.3742 47.0535 17.3742C46.26 17.3742 45.8085 16.6724 45.8085 13.4648C45.8085 11.5936 45.8647 10.7799 45.8923 9.4267C45.9083 8.64717 45.9393 8.0484 45.9376 7.91271C45.9317 7.49613 45.2113 7.28616 44.8762 7.2084C44.5254 7.12731 44.2226 7.09747 43.9901 7.1146C43.6834 7.13746 43.4677 7.41217 43.4677 7.61705V8.08919C43.0511 7.43454 42.3811 6.97892 41.9353 6.84688C40.7346 6.49044 39.4886 6.8115 38.5366 8.1287C37.9158 8.98758 37.4132 9.93978 37.1545 12.0476C37.0797 12.6568 37.0467 13.2272 37.051 13.7603C36.8034 15.2744 35.71 17.0194 34.8156 17.0194C34.2922 17.0194 33.7937 16.0042 33.7937 13.8406C33.7937 10.9586 33.9721 6.85529 34.0022 6.45982C34.0022 6.45982 35.1323 6.44062 35.3512 6.43807C35.9149 6.43188 36.4254 6.44521 37.1762 6.40681C37.5528 6.3876 37.9156 5.03611 37.5269 4.86885C37.3508 4.79315 36.1058 4.72682 35.6122 4.71634C35.1972 4.70694 34.0419 4.62144 34.0419 4.62144C34.0419 4.62144 34.1455 1.89783 34.1697 1.61011C34.1901 1.37032 33.8799 1.24685 33.702 1.17194C33.2694 0.988959 32.8823 0.901352 32.4235 0.806769C31.7896 0.676007 31.5021 0.803912 31.4459 1.33889C31.3613 2.1508 31.3175 4.52891 31.3175 4.52891C30.8524 4.52891 29.2635 4.43798 28.7982 4.43798C28.3659 4.43798 27.8993 6.29715 28.4969 6.32C29.1846 6.34666 30.3829 6.36967 31.1774 6.39364C31.1774 6.39364 31.142 10.5646 31.142 11.8523C31.142 11.9893 31.1432 12.1212 31.1434 12.2492C30.7062 14.5281 29.1662 15.7592 29.1662 15.7592C29.4969 14.2515 28.8213 13.1194 27.6044 12.161C27.1561 11.8078 26.271 11.1392 25.2807 10.4065C25.2807 10.4065 25.8543 9.84126 26.3629 8.70402C26.7233 7.89846 26.7389 6.97657 25.8543 6.77328C24.3926 6.43715 23.1875 7.51059 22.828 8.65657C22.5495 9.54433 22.6981 10.2031 23.2437 10.8874C23.2835 10.9374 23.3267 10.9885 23.3713 11.0399C23.0413 11.6759 22.5881 12.532 22.2042 13.196C21.1387 15.0395 20.3337 16.4976 19.7255 16.4976C19.2392 16.4976 19.2457 15.0172 19.2457 13.6312C19.2457 12.4363 19.3339 10.6398 19.4044 8.77988C19.4277 8.16476 19.1202 7.81434 18.6046 7.49695C18.2913 7.30413 17.6227 6.925 17.2355 6.925C16.6559 6.925 14.9837 7.00386 13.4037 11.5743C13.2045 12.1503 12.8134 13.2 12.8134 13.2L12.847 7.70389C12.847 7.57503 12.7784 7.45045 12.6212 7.36522C12.355 7.22065 11.6439 6.925 11.0116 6.925C10.7103 6.925 10.5599 7.06513 10.5599 7.34444L10.5048 15.9431C10.5048 16.5964 10.5218 17.3586 10.5864 17.692C10.6508 18.0257 10.755 18.2973 10.8842 18.4588C11.0131 18.6201 11.1623 18.7431 11.4082 18.7938C11.6371 18.8409 12.8904 19.0019 12.9555 18.5229C13.0335 17.9489 13.0365 17.3281 13.6946 15.0126C14.7192 11.4078 16.055 9.64891 16.683 9.02427C16.7927 8.91509 16.9181 8.90858 16.9121 9.08727C16.8853 9.8776 16.791 11.8525 16.7275 13.5302C16.5574 18.0202 17.3742 18.8524 18.5415 18.8524C19.4345 18.8524 20.6933 17.9651 22.0427 15.719C22.884 14.3193 23.7008 12.9469 24.2877 11.9577C24.6966 12.3363 25.1556 12.7437 25.6142 13.179C26.6801 14.1906 27.03 15.1518 26.7978 16.0637C26.6202 16.7608 25.9515 17.4792 24.7612 16.781C24.4143 16.5773 24.2662 16.4199 23.9174 16.1902C23.73 16.0668 23.4439 16.0299 23.2723 16.1592C22.8267 16.4952 22.5718 16.9226 22.4263 17.4517C22.2847 17.9665 22.8003 18.2387 23.3348 18.4767C23.7951 18.6816 24.7842 18.8672 25.4151 18.8884C27.873 18.9706 29.842 17.7016 31.2127 14.4283C31.458 17.2552 32.5023 18.8549 34.3165 18.8549C35.5295 18.8549 36.7456 17.2871 37.2774 15.7447C37.4301 16.3734 37.656 16.9202 37.9479 17.3825C39.3459 19.5975 42.0579 19.1207 43.4202 17.2399C43.8414 16.6587 43.9055 16.4498 43.9055 16.4498C44.1042 18.2258 45.5344 18.8464 46.3533 18.8464C47.2704 18.8464 48.2173 18.4128 48.881 16.9186C48.9588 17.0808 49.0437 17.2356 49.1364 17.3824C50.5344 19.5974 53.2464 19.1207 54.6087 17.2398C54.6729 17.1516 54.7286 17.0715 54.7774 16.9997L54.8174 18.1663C54.8174 18.1663 54.0402 18.8792 53.5631 19.3165C51.4636 21.2428 49.867 22.7043 49.7496 24.4062C49.5988 26.5762 51.3588 27.3828 52.6903 27.4885C54.1043 27.6007 55.3152 26.8196 56.0595 25.7264C56.7141 24.7642 57.1426 22.6933 57.1112 20.648C57.0987 19.829 57.078 18.7876 57.0618 17.6713C57.7998 16.8143 58.6312 15.7312 59.3968 14.4633C60.2311 13.0817 61.1252 11.2262 61.583 9.78218C61.583 9.78218 62.3599 9.78884 63.1889 9.73457C63.4541 9.71727 63.5303 9.77138 63.4812 9.96579C63.422 10.2007 62.4338 14.0123 63.3357 16.5515C63.9531 18.2897 65.3447 18.849 66.1698 18.849C67.1356 18.849 68.0596 18.1196 68.5547 17.0365C68.6144 17.1572 68.6767 17.2741 68.7448 17.382C70.1428 19.5969 72.8453 19.1173 74.2171 17.2393C74.5267 16.8156 74.7024 16.4493 74.7024 16.4493C74.9968 18.2874 76.4262 18.8552 77.2449 18.8552C78.0978 18.8552 78.9072 18.5056 79.5639 16.9517C79.5913 17.6359 79.6345 18.1953 79.7027 18.3717C79.7443 18.4795 79.9866 18.6149 80.1629 18.6803C80.9431 18.9696 81.7388 18.8328 82.0332 18.7733C82.2372 18.732 82.3962 18.5684 82.4179 18.146C82.475 17.0367 82.44 15.1729 82.7763 13.7877C83.3408 11.4631 83.8673 10.5614 84.1171 10.115C84.2569 9.86485 84.4147 9.82359 84.4204 10.0883C84.4322 10.6239 84.4588 12.1968 84.6775 14.31C84.8381 15.8642 85.0526 16.7829 85.2175 17.0736C85.6881 17.9051 86.2692 17.9444 86.7425 17.9444C87.0435 17.9444 87.6731 17.8612 87.6168 17.3321C87.5893 17.0742 87.6374 15.4804 88.1939 13.1902C88.5574 11.6947 89.1633 10.3433 89.3818 9.84929C89.4624 9.6671 89.4999 9.81072 89.4986 9.8387C89.4526 10.8687 89.3493 14.2375 89.7689 16.08C90.3377 18.5761 91.9831 18.8554 92.5564 18.8554C93.7805 18.8554 94.7816 17.9243 95.1188 15.4743C95.2001 14.8847 95.0798 14.4294 94.7193 14.4294"/>
+    </svg>                          
+
+    <svg class="dm" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2975 1.72286L9.5 7.90524L11.6093 16.7678L20.2975 1.72286ZM8.63751 7.91504L10.8679 18.0519L11.1865 19.5L11.9279 18.2159L21.4502 1.72286L22.4086 0.0628579L22.5167 6.4373e-06L22.4449 0L20.5273 6.61122e-06L1.48276 8.27614e-06L0 8.40577e-06L1.09479 1.00001L8.65461 7.90524L8.63751 7.91504ZM20 1.00001L9 7L2.57756 1.00001H20Z"/>
+    </svg>       
+</div>
+
+            <div class="Stories">
+  <div class="Stories-header">
+      <h4>Stories</h4>
+      <h4>
+          <svg class="watchAll" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 5L0.25 9.33013L0.25 0.669872L7 5Z" fill="#4F4F4F"/>
+          </svg>                    
+          Watch all
+      </h4>
+  </div>
+  <div class="Stories-content">
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/betul.jpg" alt="">
+            </div>
+            <p class="name">Betül Çalık</p>                
+        </div>
+        <div class="story live">
+            <div class="avatar">
+                <img src="media/profile/ramo.jpg" alt="">
+            </div>
+            <p class="name">Rahmican Döğer</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/pelin.jpg" alt="">
+            </div>
+            <p class="name">Pelin Dilek</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/beliz.jpg" alt="">
+            </div>
+            <p class="name">Beliz Başkır</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/dilara.jpg" alt="">
+            </div>
+            <p class="name">Dilara Karakurt</p>                
+        </div>
+        <div class="story live">
+            <div class="avatar">
+                <img src="media/profile/memo.jpg" alt="">
+            </div>
+            <p class="name">bayyeter</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/beste.jpg" alt="">
+            </div>
+            <p class="name">Beste Gülşen</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/berke.jpg" alt="">
+            </div>
+            <p class="name">Berke Baykondu</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/berkay.jpg" alt="">
+            </div>
+            <p class="name">Berkay</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/mert.jpg" alt="">
+            </div>
+            <p class="name">Mert</p>                
+        </div>
+        <div class="story">
+            <div class="avatar">
+                <img src="media/profile/cuma.jpg" alt="">
+            </div>
+            <p class="name">Cuma</p>                
+        </div>
+  </div>
+</div>
+
+            <div class="Post">
+    <div class="Post-header">
+        <div class="profile">
+            <img src="media/profile/yigit.jpg" alt="">
+        </div>                
+        <div class="title">
+            <h4>Yiğit Çakmak</h4>
+            <p>İzmir</p>
+        </div>
+        <div class="icon">
+            <svg class="threeDots" viewBox="0 0 13 3"  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5ZM8 1.5C8 2.32843 7.32843 3 6.5 3C5.67157 3 5 2.32843 5 1.5C5 0.671573 5.67157 0 6.5 0C7.32843 0 8 0.671573 8 1.5ZM11.5 3C12.3284 3 13 2.32843 13 1.5C13 0.671573 12.3284 0 11.5 0C10.6716 0 10 0.671573 10 1.5C10 2.32843 10.6716 3 11.5 3Z"/>
+            </svg>                        
+        </div>
+    </div>
+  
+    <div class="Post-content" id="Post">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="Post-content video">
+                        <video autoplay loop id="postVideo">
+                            <source src="media/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="Post-content">
+                       <img src="media/profile/yigit.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="Post-content video">
+                        <video autoplay loop id="postVideo">
+                            <source src="media/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="Post-content">
+                       <img src="media/profile/yigit.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Post-swipper">
+        <div class="swiper-pagination"></div>
+    </div> 
+
+    <div class="Post-actions">
+        <div class="action">
+            <div class="action-group">
+                <ul>
+                    <li class="like">
+                        <svg class="like" viewBox="0 0 21 19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3045 2.94333L10.6793 3.36778L11.0541 2.94333L11.6644 2.25219C13.4374 0.244354 16.7022 -0.0933632 18.9374 1.52669C19.9971 2.29471 20.4472 3.47394 20.4956 4.71964C20.5444 5.97394 20.1801 7.23468 19.6847 8.05878C16.9189 12.6592 14.7874 14.9679 10.6668 18.3634C8.48116 16.7085 6.89751 15.5015 5.54148 14.1483C4.13212 12.7419 2.96108 11.1687 1.64392 8.7601C0.161811 6.04989 0.278957 3.07934 2.4212 1.52669C4.65643 -0.0933642 7.92125 0.244355 9.69422 2.25219L10.3045 2.94333Z" />
+                        </svg>
+                    </li>
+                    <li class="comment">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6646 14.9958C19.5139 13.5259 20 11.8197 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C11.8316 20 13.5481 19.5076 15.0245 18.648L20.46 20.4897L18.6646 14.9958Z"/>
+                            </mask>
+                            <path d="M18.6646 14.9958L17.7987 14.4955L17.5754 14.8821L17.7141 15.3065L18.6646 14.9958ZM15.0245 18.648L15.3454 17.7008L14.9145 17.5548L14.5213 17.7838L15.0245 18.648ZM20.46 20.4897L20.1391 21.4368L22.0311 22.0779L21.4106 20.1791L20.46 20.4897ZM19 10C19 11.6394 18.5626 13.1736 17.7987 14.4955L19.5304 15.4961C20.4653 13.8782 21 12 21 10H19ZM10 1C14.9706 1 19 5.02944 19 10H21C21 3.92487 16.0751 -1 10 -1V1ZM1 10C1 5.02944 5.02944 1 10 1V-1C3.92487 -1 -1 3.92487 -1 10H1ZM10 19C5.02944 19 1 14.9706 1 10H-1C-1 16.0751 3.92487 21 10 21V19ZM14.5213 17.7838C13.1936 18.5569 11.6501 19 10 19V21C12.0131 21 13.9027 20.4583 15.5277 19.5121L14.5213 17.7838ZM20.781 19.5426L15.3454 17.7008L14.7036 19.5951L20.1391 21.4368L20.781 19.5426ZM17.7141 15.3065L19.5095 20.8004L21.4106 20.1791L19.6151 14.6852L17.7141 15.3065Z" fill="black" mask="url(#path-1-inside-1)"/>
+                        </svg>  
+                    </li>
+                    <li class="directMessage">
+                        <svg class="directMessage" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2975 1.72286L9.5 7.90524L11.6093 16.7678L20.2975 1.72286ZM8.63751 7.91504L10.8679 18.0519L11.1865 19.5L11.9279 18.2159L21.4502 1.72286L22.4086 0.0628579L22.5167 6.4373e-06L22.4449 0L20.5273 6.61122e-06L1.48276 8.27614e-06L0 8.40577e-06L1.09479 1.00001L8.65461 7.90524L8.63751 7.91504ZM20 1.00001L9 7L2.57756 1.00001H20Z"/>
+                        </svg> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="action-group">
+                <ul>                
+                    <li class="saved">
+                        <svg class="saved" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.67075 13.6237L0.5 19.8981V0.5H15.5V19.8981L8.32925 13.6237L8 13.3356L7.67075 13.6237Z" />
+                        </svg> 
+                    </li>
+                </ul>    
+            </div>        
+
+        </div>
+    </div>
+
+    <div class="Post-information">
+        <div class="like">
+            <p>1324 Like</p>
+        </div>
+        <div class="description">
+            <span>Yiğit Çakmak</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis expedita est ipsum perferendis, reprehenderit velit facere aliquid iste dicta totam quaerat deserunt dolores architecto, qui accusamus ullam vitae. Beatae, quam.</p>
+        </div>
+        <div class="comment">
+            <p>10 yorum</p>
+        </div>
+    </div>
+</div>
+
+<div class="Post">
+    
+    <div class="Post-header">    
+        <div class="profile">
+            <img src="media/profile/yigit.jpg" alt="">
+        </div>                
+        <div class="title">
+            <h4>Yiğit Çakmak</h4>
+            <p>İzmir</p>
+        </div>
+        <div class="icon">
+            <svg class="threeDots" viewBox="0 0 13 3"  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5ZM8 1.5C8 2.32843 7.32843 3 6.5 3C5.67157 3 5 2.32843 5 1.5C5 0.671573 5.67157 0 6.5 0C7.32843 0 8 0.671573 8 1.5ZM11.5 3C12.3284 3 13 2.32843 13 1.5C13 0.671573 12.3284 0 11.5 0C10.6716 0 10 0.671573 10 1.5C10 2.32843 10.6716 3 11.5 3Z"/>
+            </svg>                        
+        </div>
+    </div>
+  
+    <div class="Post-content" id="Post">
+        <img class="post" src="media/profile/yigit.jpg" alt="">
+    </div>
+
+    <div class="Post-actions">
+        <div class="action">
+            <div class="action-group">
+                <ul>
+                    <li class="like">
+                        <svg class="like" viewBox="0 0 21 19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3045 2.94333L10.6793 3.36778L11.0541 2.94333L11.6644 2.25219C13.4374 0.244354 16.7022 -0.0933632 18.9374 1.52669C19.9971 2.29471 20.4472 3.47394 20.4956 4.71964C20.5444 5.97394 20.1801 7.23468 19.6847 8.05878C16.9189 12.6592 14.7874 14.9679 10.6668 18.3634C8.48116 16.7085 6.89751 15.5015 5.54148 14.1483C4.13212 12.7419 2.96108 11.1687 1.64392 8.7601C0.161811 6.04989 0.278957 3.07934 2.4212 1.52669C4.65643 -0.0933642 7.92125 0.244355 9.69422 2.25219L10.3045 2.94333Z" />
+                        </svg>
+                    </li>
+                    <li class="comment">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6646 14.9958C19.5139 13.5259 20 11.8197 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C11.8316 20 13.5481 19.5076 15.0245 18.648L20.46 20.4897L18.6646 14.9958Z"/>
+                            </mask>
+                            <path d="M18.6646 14.9958L17.7987 14.4955L17.5754 14.8821L17.7141 15.3065L18.6646 14.9958ZM15.0245 18.648L15.3454 17.7008L14.9145 17.5548L14.5213 17.7838L15.0245 18.648ZM20.46 20.4897L20.1391 21.4368L22.0311 22.0779L21.4106 20.1791L20.46 20.4897ZM19 10C19 11.6394 18.5626 13.1736 17.7987 14.4955L19.5304 15.4961C20.4653 13.8782 21 12 21 10H19ZM10 1C14.9706 1 19 5.02944 19 10H21C21 3.92487 16.0751 -1 10 -1V1ZM1 10C1 5.02944 5.02944 1 10 1V-1C3.92487 -1 -1 3.92487 -1 10H1ZM10 19C5.02944 19 1 14.9706 1 10H-1C-1 16.0751 3.92487 21 10 21V19ZM14.5213 17.7838C13.1936 18.5569 11.6501 19 10 19V21C12.0131 21 13.9027 20.4583 15.5277 19.5121L14.5213 17.7838ZM20.781 19.5426L15.3454 17.7008L14.7036 19.5951L20.1391 21.4368L20.781 19.5426ZM17.7141 15.3065L19.5095 20.8004L21.4106 20.1791L19.6151 14.6852L17.7141 15.3065Z" fill="black" mask="url(#path-1-inside-1)"/>
+                        </svg>  
+                    </li>
+                    <li class="directMessage">
+                        <svg class="directMessage" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2975 1.72286L9.5 7.90524L11.6093 16.7678L20.2975 1.72286ZM8.63751 7.91504L10.8679 18.0519L11.1865 19.5L11.9279 18.2159L21.4502 1.72286L22.4086 0.0628579L22.5167 6.4373e-06L22.4449 0L20.5273 6.61122e-06L1.48276 8.27614e-06L0 8.40577e-06L1.09479 1.00001L8.65461 7.90524L8.63751 7.91504ZM20 1.00001L9 7L2.57756 1.00001H20Z"/>
+                        </svg> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="action-group">
+                <ul>                
+                    <li class="saved">
+                        <svg class="saved" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.67075 13.6237L0.5 19.8981V0.5H15.5V19.8981L8.32925 13.6237L8 13.3356L7.67075 13.6237Z" />
+                        </svg> 
+                    </li>
+                </ul>    
+            </div>        
+
+        </div>
+    </div>
+
+    <div class="Post-information">
+        <div class="like">
+            <p>1324 Like</p>
+        </div>
+        <div class="description">
+            <span>Yiğit Çakmak</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis expedita est ipsum perferendis, reprehenderit velit facere aliquid iste dicta totam quaerat deserunt dolores architecto, qui accusamus ullam vitae. Beatae, quam.</p>
+        </div>
+        <div class="comment">
+            <p>10 yorum</p>
+        </div>
+    </div>
+
+</div>
+        </div>
+        
+        <div class="activityPage" id="Activity" data-tab-content>
+            <div class="Header">
+  <h4>Activity</h4>
+</div>
+
+            <div class="FollowRequest">
+
+  <div class="FollowRequest-Request">
+    <div class="icon">
+      <span>76</span>
+    </div>
+    <div class="title">
+      Follow Requests
+      <div class="alt-title">
+        Approve or ignore requests
+      </div>
+    </div>
+  </div>
+  <div class="FollowRequest-Icon">
+    <svg class="rightArrow" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" fill-rule="evenodd">
+            <g id="Day-1145-Recipe-Page-UI-Components---real-pixels" transform="translate(-1246.000000, -276.000000)">
+                <g id="Group-3" transform="translate(300.000000, 143.000000)">
+                    <g id="Group-2" transform="translate(929.000000, 120.000000)">
+                        <g id="Group" transform="translate(22.000000, 22.000000) rotate(-90.000000) translate(-22.000000, -22.000000) translate(7.000000, 7.000000)">
+                            <polygon id="Path" points="0 0 30 0 30 30 0 30"></polygon>
+                            <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="7.5 11.25 15 18.75 22.5 11.25"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+  </div>
+</div>
+            
+            <div class="Activity">
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn following">Following</button>
+      </a>
+    </div>
+  </div>
+  <div class="Activity-components">
+    <div class="Activity-components-avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <div class="title">
+        Yiğit Çakmak
+        <div class="alt-title">
+          Started following you. <span> 2d</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="Activity-components-button">
+      <a href="#">
+        <button class="btn follow">Follow</button>
+      </a>
+    </div>
+  </div>
+  
+</div>
+        </div>
+
+        <div class="profilePage" id="Profile" data-tab-content>
+            <div class="Header">
+
+  <div class="Header-bar">
+    <div class="icon">
+      <svg class="settings" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m474.835938 190.613281-24.96875-4.234375c-2.222657-6.1875-4.734376-12.257812-7.511719-18.160156l14.703125-20.570312c12.792968-17.972657 10.738281-42.246094-4.835938-57.667969l-30.003906-30.007813c-8.480469-8.480468-19.722656-13.152344-31.652344-13.152344-9.394531 0-18.378906 2.894532-25.917968 8.320313l-20.648438 14.707031c-6.386719-3.019531-12.867188-5.6875-19.390625-7.992187l-4.128906-24.464844c-3.632813-21.667969-22.21875-37.390625-44.195313-37.390625h-42.390625c-21.972656 0-40.558593 15.722656-44.183593 37.347656l-4.339844 25.421875c-6.128906 2.238281-12.171875 4.78125-18.089844 7.621094l-20.273438-14.601563c-7.601562-5.472656-16.621093-8.363281-26.085937-8.363281-12.046875 0-23.292969 4.679688-31.679687 13.179688l-30.074219 29.976562c-15.53125 15.53125-17.566407 39.785157-4.835938 57.667969l14.941407 20.992188c-2.753907 5.925781-5.230469 12.023437-7.417969 18.246093l-24.46875 4.128907c-21.664063 3.636718-37.386719 22.222656-37.386719 44.195312v42.390625c0 21.972656 15.722656 40.558594 37.347656 44.1875l25.421875 4.335937c2.238281 6.132813 4.785157 12.179688 7.621094 18.09375l-14.546875 20.234376c-12.792969 17.972656-10.738281 42.25 4.835938 57.667968l30.003906 30.007813c8.480468 8.480469 19.722656 13.152343 31.652344 13.152343 9.394531 0 18.378906-2.894531 25.914062-8.316406l20.992188-14.941406c5.515624 2.5625 11.234374 4.910156 17.105468 7.023438l4.160156 24.964843c3.636719 21.664063 22.222657 37.386719 44.195313 37.386719h42.488281c21.972656 0 40.5625-15.722656 44.191406-37.359375l4.234376-24.972656c6.1875-2.222657 12.257812-4.734375 18.160156-7.511719l20.503906 14.65625c7.601562 5.472656 16.621094 8.367188 26.085938 8.367188 11.925781 0 23.167968-4.671876 31.648437-13.152344l30.003906-30.007813c15.535157-15.53125 17.566407-39.785156 4.835938-57.667969l-14.71875-20.667968c2.851562-6.039063 5.371093-12.105469 7.539062-18.136719l24.933594-4.15625c21.664063-3.636719 37.386719-22.222656 37.386719-44.195313v-42.304687c.246094-21.996094-15.363282-40.605469-37.160156-44.277344zm7.160156 86.582031c0 7.261719-5.195313 13.40625-12.335938 14.605469l-33.070312 5.511719c-6.101563 1.015625-11.023438 5.320312-12.855469 11.238281-2.9375 9.519531-6.972656 19.25-11.984375 28.90625-2.835938 5.445313-2.382812 11.933594 1.179688 16.925781l19.488281 27.367188c4.203125 5.90625 3.527343 13.921875-1.609375 19.058594l-30.003906 30.003906c-2.855469 2.855469-6.464844 4.367188-10.4375 4.367188-3.132813 0-6.089844-.9375-8.597657-2.742188l-27.25-19.476562c-5.011719-3.597657-11.527343-4.050782-17-1.1875-9.164062 4.796874-18.902343 8.832031-28.945312 11.984374-5.859375 1.835938-10.136719 6.742188-11.15625 12.78125l-5.617188 33.105469c-1.199219 7.160157-7.34375 12.355469-14.609375 12.355469h-42.488281c-7.265625 0-13.40625-5.195312-14.605469-12.335938l-5.511718-33.070312c-1.007813-6.0625-5.273438-10.976562-11.132813-12.828125-9.898437-3.125-19.324219-7-28.023437-11.519531-2.371094-1.230469-4.9375-1.835938-7.492188-1.835938-3.304688 0-6.59375 1.015625-9.410156 3.019532l-27.738282 19.742187c-2.5 1.800781-5.34375 2.710937-8.453124 2.710937-3.972657 0-7.582032-1.507812-10.4375-4.367187l-30.058594-30.054687c-5.128906-5.078126-5.78125-13.070313-1.597656-18.949219l19.371093-26.945313c3.644531-5.058594 4.089844-11.621094 1.152344-17.140625-4.925781-9.238281-9.007813-18.925781-12.136719-28.796875-1.851562-5.820312-6.738281-10.074218-12.753906-11.101562l-33.523438-5.714844c-7.15625-1.203125-12.351562-7.347656-12.351562-14.609375v-42.390625c0-7.261719 5.195312-13.40625 12.363281-14.609375l32.664063-5.511719c6.105468-1.027344 11.023437-5.34375 12.839844-11.28125 3.082031-10.085937 7.046874-19.839844 11.785156-28.980468 2.820312-5.433594 2.367187-11.90625-1.183594-16.902344l-19.695312-27.671875c-4.207032-5.90625-3.53125-13.921875 1.589843-19.042969l30.105469-30.003906.109375-.113282c2.707031-2.753906 6.378906-4.269531 10.34375-4.269531 3.132813 0 6.09375.9375 8.554687 2.710938l27.0625 19.480469c5.066407 3.648437 11.636719 4.085937 17.136719 1.148437 9.238281-4.925781 18.925781-9.007813 28.785157-12.132813 5.820312-1.847656 10.074218-6.726562 11.109374-12.757812l5.71875-33.523438c1.199219-7.15625 7.34375-12.351562 14.609376-12.351562h42.390624c7.261719 0 13.40625 5.195312 14.609376 12.363281l5.511718 32.675781c1.03125 6.109376 5.355469 11.023438 11.296875 12.835938 10.128907 3.078125 20.230469 7.234375 30.03125 12.359375 5.445313 2.84375 11.933594 2.398437 16.949219-1.167969l27.429688-19.535156c2.496093-1.800781 5.339843-2.710938 8.453124-2.710938 3.96875 0 7.578126 1.507813 10.4375 4.367188l30.054688 30.054688c5.128906 5.078124 5.785156 13.070312 1.574219 18.980468l-19.496094 27.277344c-3.578125 5.015625-4.023437 11.523438-1.167969 16.976562 4.800782 9.164063 8.832032 18.902344 11.988282 28.949219 1.839843 5.859375 6.742187 10.132813 12.78125 11.152344l33.078124 5.613281.027344.003906c7.136719 1.199219 12.25 7.253907 12.148438 14.398438zm0 0"/><path d="m256 156.453125c-54.890625 0-99.546875 44.65625-99.546875 99.546875s44.65625 99.546875 99.546875 99.546875 99.546875-44.65625 99.546875-99.546875-44.65625-99.546875-99.546875-99.546875zm0 169.09375c-38.347656 0-69.546875-31.199219-69.546875-69.546875s31.199219-69.546875 69.546875-69.546875 69.546875 31.199219 69.546875 69.546875-31.199219 69.546875-69.546875 69.546875zm0 0"/></svg>
+    </div>
+    <div class="account">
+      yigitcakmakx
+    </div>
+    <div class="icon">
+      <svg class="user-add" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
+      <g>
+        <g>
+          <g>
+            <path d="M298.667,277.333c-56.853,0-170.667,28.48-170.667,85.333v42.667h341.333v-42.667
+              C469.333,305.813,355.52,277.333,298.667,277.333z"/>
+            <path  d="M298.667,234.667c47.147,0,85.333-38.293,85.333-85.333C384,102.187,345.813,64,298.667,64s-85.333,38.187-85.333,85.333
+              C213.333,196.373,251.52,234.667,298.667,234.667z"/>
+            <polygon points="170.667,192 106.667,192 106.667,128 64,128 64,192 0,192 0,234.667 64,234.667 64,298.667 106.667,298.667 
+              106.667,234.667 170.667,234.667"/>
+          </g>
+        </g>
+      </g>
+      </svg>
+       
+    </div>
+  </div>
+
+  <h3 class="Header-title">Yigit Cakmak</h3>
+  
+  <div class="Header-profile">
+    
+    <div class="avatar">
+      <img src="media/profile/yigit.jpg" alt="">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="10" cy="10" r="9.25" fill="#309CFF" stroke="white" stroke-width="1.5"/>
+        <path d="M10 6V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 10H14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>        
+    </div>
+
+    <div class="profile-statistic">
+      <ul>
+        <li>
+          123
+          <span>Posts</span>
+        </li>
+        <li>
+          123
+          <span>Following</span>
+        </li>
+        <li>
+          123
+          <span>Followers</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
+            <div class="Bio">
+  <div class="Bio-title">
+    Yiğit Çakmak
+  </div>
+  <div class="Bio-description">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt qui mollitia hic harum reiciendis sapiente! Facilis illo laudantium tenetur perspiciatis dolor nisi commodi nesciun
+    <a href="#" class="tag">#software</a>
+    <p>
+      <a href="https://www.yigitcakmak.com" class="website">yigitcakmak.com</a>
+    </p>
+  </div>
+  <div class="Bio-editProfile">
+    <a href="#">
+      <button>Edit Profile</button>
+    </a>
+  </div>
+</div>
+
+            <div class="ProfileNavigation">
+  <ul>
+    <li id="Profile" class="active">
+      <svg class="grid" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.75" y="0.75" width="26.2778" height="26.5"/>
+        <rect x="0.75" y="0.75" width="8.42064" height="26.5"/>
+        <rect x="18.6071" y="0.75" width="8.42064" height="26.5"/>
+        <rect x="0.75" y="27.25" width="8.5" height="26.2778" transform="rotate(-90 0.75 27.25)"/>
+        <rect x="0.75" y="9.25" width="8.5" height="26.2778" transform="rotate(-90 0.75 9.25)"/>
+      </svg>              
+    </li>
+    <li id="Saved">
+      <svg class="saved" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.67075 13.6237L0.5 19.8981V0.5H15.5V19.8981L8.32925 13.6237L8 13.3356L7.67075 13.6237Z"/>
+      </svg>        
+    </li>
+    <li id="Tag">
+      <svg class="tag" viewBox="0 0 28 29" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 5C0.75 4.30964 1.30964 3.75 2 3.75H10.5858C11.0499 3.75 11.495 3.56563 11.8232 3.23744L13.8232 1.23744C13.9209 1.13981 14.0791 1.13981 14.1768 1.23744L14.6982 0.715995L14.1768 1.23744L16.1768 3.23744C16.505 3.56562 16.9501 3.75 17.4142 3.75H26C26.6904 3.75 27.25 4.30964 27.25 5V27C27.25 27.6904 26.6904 28.25 26 28.25H2C1.30964 28.25 0.75 27.6904 0.75 27V5Z"/>
+        <path d="M5.75 26C5.75 23.6528 7.65279 21.75 10 21.75H18C20.3472 21.75 22.25 23.6528 22.25 26V28.25H5.75V26Z"/>
+        <circle cx="14" cy="13" r="4.25"/>
+      </svg>            
+    </li>
+  </ul>
+</div>
+            
+            <div class="Category">
+  <div class="Content">
+    <div id="Profile" class="Content-status active" >
+      <div class="profileImage">
+        <img src="https://picsum.photos/400/400?random=1" alt="">
+        <img src="https://picsum.photos/400/400?random=2" alt="">
+        <img src="https://picsum.photos/400/400?random=3" alt="">
+        <img src="https://picsum.photos/400/400?random=4" alt="">
+        <img src="https://picsum.photos/400/400?random=5" alt="">
+        <img src="https://picsum.photos/400/400?random=6" alt="">
+        <img src="https://picsum.photos/400/400?random=7" alt="">
+        <img src="https://picsum.photos/400/400?random=8" alt="">
+      </div>
+    </div>
+    <div id="Saved" class="Content-status">
+      <div class="profileImage">
+        <img src="https://picsum.photos/400/400?random=9" alt="">
+        <img src="https://picsum.photos/400/400?random=10" alt="">
+        <img src="https://picsum.photos/400/400?random=11" alt="">
+        <img src="https://picsum.photos/400/400?random=12" alt="">
+        <img src="https://picsum.photos/400/400?random=13" alt="">
+        <img src="https://picsum.photos/400/400?random=14" alt="">
+        <img src="https://picsum.photos/400/400?random=15" alt="">
+        <img src="https://picsum.photos/400/400?random=16" alt="">
+        <img src="https://picsum.photos/400/400?random=17" alt="">
+      </div>
+    </div>   
+  </div>
+</div>
+        </div>
+
+    </div>
+
+    
+
+
+    <nav class="Navigation tabs">
+  <ul>
+      <li data-tab-target="#Home" class="active tab">
+        <svg class="home" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.883301 10.2743V22H8.09661V14.7867H12.2185V22H19.4318V10.2743L10.1576 1L0.883301 10.2743Z" />
+        </svg>                        
+      </li>
+      <li data-tab-target="#Search" class="tab">
+        <svg class="search" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.09835 9.83805C2.09835 5.29375 5.79375 1.59938 10.337 1.59938C14.8793 1.59938 18.5747 5.29375 18.5747 9.83805C18.5747 14.3824 14.8793 18.0767 10.337 18.0767C5.79375 18.0767 2.09835 14.3824 2.09835 9.83805ZM17.3049 16.0319C18.7748 14.3803 19.673 12.2144 19.673 9.83805C19.673 4.68914 15.4839 0.5 10.337 0.5C5.19017 0.5 1 4.68914 1 9.83805C1 14.987 5.19017 19.1761 10.337 19.1761C12.7134 19.1761 14.8793 18.2738 16.5278 16.808L21.0597 21.3399C21.1685 21.4466 21.3092 21.5 21.4498 21.5C21.5894 21.5 21.73 21.4466 21.8368 21.3399C22.0513 21.1253 22.0513 20.7784 21.8368 20.5638L17.3049 16.0319Z" />
+        </svg>                        
+      </li>
+      <li data-tab-target="#Camera" class="tab">
+        <svg class="camera" viewBox="0 0 22 23" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6 1.7C3.61766 1.7 1.2 4.11766 1.2 7.1V15.9C1.2 18.8823 3.61766 21.3 6.6 21.3H15.4C18.3823 21.3 20.8 18.8823 20.8 15.9V7.1C20.8 4.11766 18.3823 1.7 15.4 1.7H6.6ZM0 7.1C0 3.45492 2.95492 0.5 6.6 0.5H15.4C19.0451 0.5 22 3.45492 22 7.1V15.9C22 19.5451 19.0451 22.5 15.4 22.5H6.6C2.95492 22.5 0 19.5451 0 15.9V7.1ZM11 7.2C8.62518 7.2 6.7 9.12518 6.7 11.5C6.7 13.8748 8.62518 15.8 11 15.8C13.3748 15.8 15.3 13.8748 15.3 11.5C15.3 9.12518 13.3748 7.2 11 7.2ZM5.5 11.5C5.5 8.46243 7.96243 6 11 6C14.0376 6 16.5 8.46243 16.5 11.5C16.5 14.5376 14.0376 17 11 17C7.96243 17 5.5 14.5376 5.5 11.5ZM16.6 3.89999C17.2075 3.89999 17.7 4.39247 17.7 4.99999C17.7 5.6075 17.2075 6.09999 16.6 6.09999C15.9925 6.09999 15.5 5.6075 15.5 4.99999C15.5 4.39247 15.9925 3.89999 16.6 3.89999Z" fill="black"/>
+        </svg>                                       
+      </li>
+      <li data-tab-target="#Activity" class="tab">
+        <svg class="activity" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.3045 2.94333L10.6793 3.36778L11.0541 2.94333L11.6644 2.25219C13.4374 0.244354 16.7022 -0.0933632 18.9374 1.52669C19.9971 2.29471 20.4472 3.47394 20.4956 4.71964C20.5444 5.97394 20.1801 7.23468 19.6847 8.05878C16.9189 12.6592 14.7874 14.9679 10.6668 18.3634C8.48116 16.7085 6.89751 15.5015 5.54148 14.1483C4.13212 12.7419 2.96108 11.1687 1.64392 8.7601C0.161811 6.04989 0.278957 3.07934 2.4212 1.52669C4.65643 -0.0933642 7.92125 0.244355 9.69422 2.25219L10.3045 2.94333Z" stroke="black" stroke-linecap="round"/>
+        </svg>
+                                  
+      </li>
+      <li data-tab-target="#Profile" class="tab">
+        <div class="profile">
+          <img src="media/profile/yigit.jpg" alt="">
+        </div>
+      </li>
+  </ul>
+</nav>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+<script src="js/app.min.js"></script>
+</body>
+</html>

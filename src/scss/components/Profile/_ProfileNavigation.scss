@@ -1,0 +1,30 @@
+.ProfileNavigation{
+  background: #DADADA;
+  ul{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      background: #fff;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      border-bottom: 2px solid #fff;
+      transition: 300ms all;
+      svg{
+        opacity: 0.5;
+      }
+      &.active{
+        border-bottom: 2px solid #000;
+        svg{
+          transition: 400ms all;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

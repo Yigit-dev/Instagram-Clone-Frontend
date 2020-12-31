@@ -1,0 +1,119 @@
+.Post{
+    
+  &-header{   
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .profile{
+      img{
+        @include profileAvatar;
+        margin-right: 10px;
+      }
+    }
+    .icon{
+      position: absolute;
+      right: 10px;
+    }
+  }
+
+  &-content{
+    position: relative;
+    img{
+      @include postImage;
+    }
+    video{
+      @include postVideo;
+    }
+    .swiper-container{
+      width: 100%;
+      min-width: 100%;
+      height: auto;
+      .swiper-slide {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+
+
+  &-swipper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative!important;
+    margin-top: 4px;
+  }
+
+  &-actions{
+    .action{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      &-group{  
+        ul{
+          display: flex;
+          align-items: center;
+          li{
+            margin-right: 15px;
+            &.like{
+              &.active{
+                svg{
+                  fill: $likeColor;
+                  path{
+                    stroke: $stroke;
+                  }
+                }
+              }
+            }
+  
+            &.saved{
+              &.active{
+                svg{                
+                  fill: $saveColor;
+                  path{
+                    stroke: $stroke;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-information{
+    padding: 5px 10px;
+    .like{
+      margin-bottom: 7px;
+      p{
+        font-size: 11px;
+      }
+    }
+    .description{
+      span{
+        font-weight: bold;
+        font-size: 13px;
+      }
+      p{
+        font-size: 12px;
+      }
+      margin-bottom: 5px;
+    }
+    .comment{
+      color: rgba(#000, .4);
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+
+}

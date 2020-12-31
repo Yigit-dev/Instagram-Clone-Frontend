@@ -1,0 +1,52 @@
+.Header{
+  &-bar{
+    @include header;
+  }
+  &-title{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  &-profile{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .avatar{
+      position: relative;
+      width: 77px;
+      height: 77px;
+      img{
+        min-width: 77px;
+        max-width: 77px;
+        max-height: 77px;
+        object-fit: cover;
+        background-size: cover;
+        border-radius: 50%;
+      }
+      svg{
+        position: absolute;
+        top: 75%;
+        left: 75%;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .profile-statistic{
+      padding: 23px 45px;
+     ul{
+      display: flex;
+      align-items: center;
+       li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        margin-right: 15px;      
+       }
+     }
+      
+    }
+  }
+}

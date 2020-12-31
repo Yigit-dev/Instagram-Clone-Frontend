@@ -1,0 +1,21 @@
+.Post{
+  &-content{
+    &.video{
+      &::after{
+        content: '';
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        top: 5px;
+        right: 5px;
+        background: url('../../media/icon/video-camera.svg') no-repeat center center;
+        background-size: cover;
+        animation: blinker 1.5s linear infinite;
+        @keyframes blinker {  
+          60% { opacity: 0.5; }
+        }  
+      }
+      
+    }
+  }
+}

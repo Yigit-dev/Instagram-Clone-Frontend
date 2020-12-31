@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  &:focus {
+    outline: 0;
+  }
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+body{
+  background: $primaryBackground;
+  font-family: $fontFamily;
+  max-width: 776px;
+  margin: 0 auto;
+}
+
+h4{
+  font-size: 11px;
+}
+
+p{
+  font-size: 10px;
+}
+
+// Post
+@mixin profileAvatar{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+@mixin postImage{
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+
+}
+
+@mixin postVideo{
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+@mixin header{
+  background: $primaryBackground;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: $borderBottom;
+  box-shadow: $boxShadow;
+}
+
+[data-tab-content] {
+  display: none!important;
+}
+
+.active[data-tab-content] {
+  display: block!important;
+}
+

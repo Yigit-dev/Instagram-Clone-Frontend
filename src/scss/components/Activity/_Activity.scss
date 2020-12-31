@@ -1,0 +1,50 @@
+.Activity{
+  &-components{
+    padding: 13px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: $boxShadow;
+    &-avatar{
+      display: flex;
+      align-items: center;
+      img{
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+        background-size: cover;
+        flex-shrink: 0;
+        border-radius: 50%;
+      }
+      .title{
+        margin-left: 20px;
+        font-size: 16px;
+        color: #000;
+        .alt-title{
+          font-size: 14px;        
+          span{
+            color: rgba(#000, .6);
+          }
+        }
+      }
+    }
+  
+    &-button{
+      a{        
+        button{
+          padding: 6px 8px;
+          border-radius: 4px;
+          &.follow{
+            color: #fff;
+            background: $followBtnColor;   
+          }
+          &.following{
+            border: $buttonBorder;
+            color: #000;
+            background: $followingBtnColor;
+          }
+        }
+      }
+    }
+  }
+}

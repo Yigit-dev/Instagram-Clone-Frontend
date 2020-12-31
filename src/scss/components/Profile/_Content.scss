@@ -1,0 +1,28 @@
+.Category{
+  background: #fff;
+  .Content{
+    padding-top: 1px;
+    &-status{
+      display: none;
+      &.active{
+        display: block;
+      }
+      .profileImage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        img{
+          display: flex;
+          align-items: center;  
+          width: calc(100%/3 - 1px);
+          height: auto;
+          object-fit: cover;
+          background-size: cover;
+          margin-right: 1px;
+          margin-bottom: 2px;
+        }
+      }
+    }    
+  }
+}

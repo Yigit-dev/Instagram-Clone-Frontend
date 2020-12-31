@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+
+    <div class="app-inner">
+        
+        <div class="homePage active" id="Home" data-tab-content>
+            @@include('views/Homepage/Header.html')
+
+            @@include('views/Homepage/Stories.html')
+
+            @@include('views/Homepage/Post.html')
+        </div>
+        
+        <div class="activityPage" id="Activity" data-tab-content>
+            @@include('views/Activity/Header.html')
+
+            @@include('views/Activity/FollowRequest.html')
+            
+            @@include('views/Activity/Activity.html')
+        </div>
+
+        <div class="profilePage" id="Profile" data-tab-content>
+            @@include('views/Profile/Header.html')
+
+            @@include('views/Profile/Bio.html')
+
+            @@include('views/Profile/ProfileNavigation.html')
+            
+            @@include('views/Profile/Content.html')
+        </div>
+
+    </div>
+
+    
+
+
+    @@include('views/globals/navigation.html')
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+<script src="js/app.min.js"></script>
+</body>
+</html>

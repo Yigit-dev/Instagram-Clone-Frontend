@@ -1,0 +1,36 @@
+.Bio{
+  padding: 20px 16px;
+  font-size: 12px;
+
+  &-title{
+    font-weight: bold;
+  }
+
+  &-description{
+    font-weight: normal;
+    a.tag{
+      color: $linkTagColor;
+    }
+    p{
+      font-size: 12px;
+      a.website{
+        color: $linkTagColor;
+      }
+    }
+  }
+  &-editProfile{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    button{
+      padding: 8px 141px;
+      background: $buttonBackground;
+      border-radius: $buttonBackgroundRadius;
+      border: $buttonBorder;
+    }
+  }
+  border-bottom: $buttonBorder;
+}

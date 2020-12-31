@@ -1,0 +1,33 @@
+$primaryBackground: #FAFAFA;
+$fontFamily: 'SF Pro Display';
+$boxShadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+$borderBottom: 1px solid #FAFAFA;
+
+// Stories - Color - Gradient
+$storiesAvatarBorder: 2px solid #fff;
+$storiesGradient: linear-gradient(220deg, #9E2692, #FAA958);
+$liveGradient: linear-gradient(220deg, #5B00C4, #D00049);
+$liveTextGradient: linear-gradient(-45deg, #C7059A, #DD0E44);
+$liveTextRadius: 1px;
+$liveTextColor: #fff;
+$liveBorderColor: #fff;
+
+
+
+// Post Actions
+$likeColor: #F72848;
+$saveColor: #000;
+$stroke: none;
+
+// Profile
+$linkTagColor: #003569;
+
+// Profile Edit button
+$buttonBackground: #fff;
+$buttonBackgroundRadius: 5px;
+$buttonBorder: 1px solid #DBDBDB;
+
+// Activity
+// Activity follow button
+$followBtnColor: #18a0fb;
+$followingBtnColor: transparent;

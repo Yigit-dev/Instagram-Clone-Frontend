@@ -1,0 +1,23 @@
+.Navigation{
+  background: $primaryBackground;
+  height: 60px;
+  padding: 13px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li{      
+      .profile{
+        img{
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}
