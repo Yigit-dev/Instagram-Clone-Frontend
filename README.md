@@ -30,6 +30,7 @@ npm install
 gulp
 ```
 
+
 **Thanks to Arthur Guillermin Hazan for the design**
 
 [Figma - Instagram UI Mockup | Instagram template for Stories and Posts](https://www.figma.com/community/file/789166775630186057)
