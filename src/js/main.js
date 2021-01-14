@@ -71,18 +71,9 @@ PostActions.forEach((item) => {
 const postVideo = document.querySelectorAll('#postVideo');
 postVideo.forEach(video => {
   var pause = 1;
-    video.addEventListener('click', function(){    
-      
-      if(pause != 0){
-        pause = 0;
-        video.pause();
-
-      }
-      else{
-        pause = 1;
-        video.play();
-      }
-
+    video.addEventListener('click', function(){        
+      const method = video.paused ? 'play' : 'pause'
+      video[method]()
     })
 });
 
